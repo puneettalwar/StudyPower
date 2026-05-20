@@ -3,7 +3,7 @@
 *** Warning! This Shiny App has not been validated enough! There is no warranty for the app! ***
 
 **The link to Shiny App -**
-https://puneet-talwar.shinyapps.io/PosthocPowerShiny/
+https://puneet-talwar.shinyapps.io/StudyPower/
 
 **Linear Multiple Regression: Power & Sensitivity Analysis**
 
