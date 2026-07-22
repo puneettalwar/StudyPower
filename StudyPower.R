@@ -4,7 +4,7 @@
 
 # R 4.5.0
 #*************************************************************
-# A shiny app to provide Effect size sensitivity analysis similar to G*Power (for multiple linear regression).
+# A shiny app to provide Effect size sensitivity analysis (for multiple linear regression).
 
 # app.R
 library(shiny)
@@ -189,8 +189,8 @@ ui <- fluidPage(
                  fluidRow(
                    column(12,
                           div(style = "font-size:16px; line-height:1.6;",
-                              h2("Linear Multiple Regression: Power & Sensitivity Analysis"),
-                              p("This app replicates and extends G*Power for post-hoc power and sensitivity analysis in linear multiple regression."),
+                              h2("Linear Multiple Regression: Effect size sensitivity & Power analysis"),
+                              p("This app provides Effect size sensitivity & Power analysis for linear multiple regression."),
                               
                               h3("Inputs"),
                               tags$ul(
@@ -227,7 +227,7 @@ ui <- fluidPage(
                               ),
                               
                               hr(),
-                              p("Use this app for replication of G*Power analyses in R, with added confidence interval reporting."),
+                              p("This app extends similar analyses in G*Power with added confidence interval reporting."),
                           )                  
                    )
                  )
