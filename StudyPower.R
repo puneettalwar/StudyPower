@@ -100,7 +100,58 @@ generate_nomogram_plot <- function(alpha_input) {
 # ------------------------- UI --------------------------
 
 ui <- fluidPage(
-  titlePanel("Specify Input Parameters"),
+  #titlePanel("Specify Input Parameters"),
+  
+  # ---- Custom color theme (colors only - no font-size changes) ----
+  tags$head(
+    tags$style(HTML("
+        body {
+          background-color: #f4f7fb;
+        }
+        .title-panel-custom {
+          background: linear-gradient(90deg, #2c3e6b 0%, #3f6fb5 100%);
+          color: #ffffff;
+          padding: 18px 24px;
+          border-radius: 8px;
+          margin-bottom: 18px;
+          box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+        }
+        .well {
+          background-color: #eaf1fb;
+          border: 1px solid #c7d9f0;
+        }
+        .nav-tabs > li > a {
+          color: #2c3e6b;
+          font-weight: 600;
+        }
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:focus,
+        .nav-tabs > li.active > a:hover {
+          background-color: #3f6fb5 !important;
+          color: #ffffff !important;
+          border-color: #3f6fb5;
+        }
+        hr {
+          border-top: 1px solid #b7c9e2;
+        }
+        .btn, .btn-default {
+          background-color: #3f6fb5;
+          color: #ffffff;
+          border: none;
+        }
+        .btn:hover, .btn-default:hover {
+          background-color: #2c3e6b;
+          color: #ffffff;
+        }
+        h4 {
+          color: #2c3e6b;
+        }
+      "))
+  ),
+  
+  div(class = "title-panel-custom",
+      titlePanel("StudyPower")
+  ),
   
   sidebarLayout(
     sidebarPanel(
